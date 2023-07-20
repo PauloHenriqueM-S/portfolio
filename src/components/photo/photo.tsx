@@ -3,12 +3,12 @@ import Perfil from "public/images/photo1.jpg";
 
 export default function Photo() {
   return (
-    <div>
+    <div className="flex justify-center">
       <Image
-        className="rounded-full"
+        className="sm:w-1/2 rounded-full"
         src={Perfil}
         alt="profile"
-        width={300}
+        width={400}
         height={300}
       />
     </div>
