@@ -1,4 +1,5 @@
 import Photo from "../photo/photo";
+import Social from "./social";
 import Text from "./text";
 
 export default function Main() {
