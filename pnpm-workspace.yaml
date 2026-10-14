@@ -1,3 +1,5 @@
 allowBuilds:
+  es5-ext: true
   sharp: false
+  uglifyjs-webpack-plugin: true
   unrs-resolver: false
