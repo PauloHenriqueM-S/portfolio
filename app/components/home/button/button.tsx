@@ -26,13 +26,13 @@ export function Button({ text }: ButtonProps) {
     switch (text) {
       case "Contato": return `${base} bg-green-500 hover:bg-green-700`;
       case "Currículo": return `${base} bg-indigo-500 hover:bg-indigo-700`;
-      case "Portfólio": return `${base} bg-purple-500 hover:bg-purple-700`;
+      case "Projetos": return `${base} bg-purple-500 hover:bg-purple-700`;
       case "GitHub": return `${base} bg-gray-500 hover:bg-gray-700`;
       default: return `${base} bg-blue-500 hover:bg-blue-700`;
     }
   }
 
-  const isAnchor = text === "Saiba mais" || text === "Contato";
+  const isAnchor = text === "Saiba mais" || text === "Contato" || text === "Projetos";
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (!isAnchor) return;

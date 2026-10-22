@@ -3,7 +3,7 @@ import { Button } from "../button/button";
 export function About() {
   return (
     <>
-      <div className={"flex flex-col items-center justify-center min-h-screen bg-gray-700"}>
+      <div className={"flex flex-col items-center justify-center min-h-screen "}>
         <div className={"flex items-center justify-evenly gap-8 pt-16"}>
           <div>
             <h1 className={"text-8xl font-bold"}>Paulo Henrique</h1>
@@ -24,7 +24,7 @@ export function About() {
           </div>
           <div className={"flex justify-center gap-4 pt-8"}>
             <Button text="Saiba mais" />
-            <Button text="Portfólio" />
+            <Button text="Projetos" />
             <Button text="GitHub" />
             <Button text="Currículo" />
             <Button text="Contato" />
