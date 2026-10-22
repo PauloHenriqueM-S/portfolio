@@ -25,8 +25,6 @@ export function About() {
           <div className={"flex justify-center gap-4 pt-8"}>
             <Button text="Saiba mais" />
             <Button text="Projetos" />
-            <Button text="GitHub" />
-            <Button text="Currículo" />
             <Button text="Contato" />
           </div>
         </div >
