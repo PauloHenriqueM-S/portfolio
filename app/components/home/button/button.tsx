@@ -17,6 +17,9 @@ export function Button({ text }: ButtonProps) {
       case "Todos os projetos": return "/projects";
       case "Saiba mais": return "#learn-more";
       case "Contato": return "#contact";
+      case "Email": return "mailto:moreirahenrique_@hotmail.com";
+      case "Linkedin": return "https://www.linkedin.com/in/paulo-henrique-ms/";
+      case "Discord": return "https://discord.com/users/phtitm";
       default: return "/";
     }
   }
@@ -29,6 +32,9 @@ export function Button({ text }: ButtonProps) {
       case "Projetos": return `${base} bg-purple-500 hover:bg-purple-700`;
       case "GitHub": return `${base} bg-gray-500 hover:bg-gray-700 text-center`;
       case "Todos os projetos": return `${base} bg-blue-500 hover:bg-blue-700 text-center`;
+      case "Email": return `${base} bg-red-500 hover:bg-red-700 text-center`;
+      case "Linkedin": return `${base} bg-blue-700 hover:bg-blue-900 text-center`;
+      case "Discord": return `${base} bg-indigo-500 hover:bg-indigo-700 text-center`;
       default: return `${base} bg-blue-500 hover:bg-blue-700`;
     }
   }
@@ -46,7 +52,7 @@ export function Button({ text }: ButtonProps) {
   return (
     <Link
       href={getHref()}
-      target={text === "GitHub" ? "_blank" : undefined}
+      target={text === "GitHub" || text === "Linkedin" || text === "Discord" ? "_blank" : undefined}
       onClick={handleClick}
       className={getClassName()}
     >
